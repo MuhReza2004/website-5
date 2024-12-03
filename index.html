@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Perkembangan Anak</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <!-- Ganti src dengan path logo Anda -->
+        <img src="assets/logo.PNG" alt="Logo" class="logo" />
+      </div>
+    </header>
+    <div class="container">
+      <h1>Simulasi Perkembangan Anak</h1>
+      <form id="ageForm">
+        <label for="birthDate">Masukkan Tanggal Lahir Bayi:</label>
+        <input type="date" id="birthDate" required />
+        <button type="submit">Lihat Simulasi</button>
+      </form>
+      <div id="simulationResult" class="hidden">
+        <h2>Simulasi Anak</h2>
+        <p id="ageGroup"></p>
+        <div id="simulationDetails"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
